@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <script src="tableToExcel.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Pizzaria da tia</title>
+  </head>
+  <body>
+    <h1>Pizzaria Da Tia</h1>
+   <section>
+    <form>
+    <h3>Selecione a pizza que foi vendida <a href="https://ibb.co/ysNwdbY"><img src="https://i.ibb.co/h8gPLtZ/banner-pizza-png-Imagem-sem-fundo.png" alt="banner-pizza-png-Imagem-sem-fundo" width="50px"></a></h3>
+      <ul>
+        <li> <input type="radio" id="mussarela" name="pizzas">
+        <label for="mussarela">Mussarela</label>
+        </li>
+      <li><input type="radio" id="mista" name="pizzas"> 
+      <label for="mista">Mista</label>
+    </li>
+      <li> <input type="radio" id="calabresa" name="pizzas">
+        <label for="calabresa">calabresa</label>
+      </li>
+      <li> <input type="radio" id="bacon" name="pizzas">
+        <label for="bacon">Bacon</label>
+      </li>
+      <li> <input type="radio" id="portuguesa" name="pizzas">
+        <label for="portuguesa">Portuguesa</label>
+      </li>
+      <li> <input type="radio" id="vegetariana" name="pizzas">
+        <label for="vegetariana">Vegetariana</label>
+      </li>
+      <li> <input type="radio" id="francatu" name="pizzas">
+        <label for="francatu">Frango com Catupiry</label>
+      </li>
+
+
+
+    </ul>
+    </form>
+</section>
+<section>
+  <button id="vendas" onclick="venda()">Vendas</button><button id="estorno" onclick="estorn()">estorno</button>
+
+<button id="resets" onclick="reset()">Limpar Campos</button>
+
+</section>
+
+<section id="table">
+<table>
+<tr>
+<th>Sabores</th><th>Quantidade</th><th>Valores</th>
+</tr>
+<tr id="musssa">
+<td>Mussarela</td> <td id="resultadoMussa"></td><td id="vendaMussa"></td>
+</tr>
+<tr>
+<td>Mista</td> <td id="resultadoMista"></td><td id="vendaMista"></td>
+</tr>
+<tr>
+<td>calabresa</td> <td id="resultadoCala"></td><td id="vendaCala"></td>
+</tr>
+<tr>
+<td>Bacon</td> <td id="resultadoBacon"></td><td id="vendabacon"></td>
+</tr>
+<tr>
+<td>Portuguesa</td> <td id="resultadoPortu"></td><td id="vendaPortu"></td>
+</tr>
+<tr>
+<td>Vegetariana</td> <td id="resultadoVege"></td><td id="vendaVege"></td>
+</tr>
+<tr>
+<td> Frango com Catupiry</td> <td id="resultadoFran"></td><td id="vendaFran"></td>
+</tr>
+</table>
+</section>
+
+
+<section>
+<button id="export">Panilha</button>
+</section>
+  </body>
+</html>
