@@ -1,5 +1,8 @@
 <p> Pizzaria da Tia</p>
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/web-platform-1rtcj6)
+
+Preview
+
+<a href="https://ibb.co/1GNyb3v"><img src="https://i.ibb.co/d4vC7SW/Screenshot-2.jpg" alt="Screenshot-2" border="0"></a>
 
 
-<a href="https://ibb.co/ysNwdbY"><img src="https://i.ibb.co/h8gPLtZ/banner-pizza-png-Imagem-sem-fundo.png" alt="banner-pizza-png-Imagem-sem-fundo" width="50px"></a>
+
