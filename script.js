@@ -1,5 +1,3 @@
-'use strict';
-
 let somMussa = 0;
 let somaMista = 0;
 let somaCala = 0;
@@ -15,6 +13,7 @@ let vendaPortu = 0.00;
 let vendaVege = 0.00;
 let vendaFran = 0.00;
 
+
 let btnVendas = document.getElementById('vendas');
 let btnEstorno = document.getElementById('estorno');
 let btnPlanilha = document.getElementById('expor');
@@ -24,7 +23,7 @@ btnEstorno.addEventListener('click',estorno,false);
 btnPlanilha.addEventListener('click',panilha,false);
 
 
-function venda(){
+function venda(e){
 if(document.getElementById('mussarela').checked){
   somMussa = somMussa + 1;
   vendaMussa = vendaMussa + 18.99;
@@ -92,7 +91,7 @@ if(document.getElementById('mussarela').checked){
 };
 };
 
-function reset(){
+function reset(e){
   document.getElementById('resultadoFran').innerHTML = "";
   document.getElementById('vendaFran').innerHTML = "";
 
@@ -120,7 +119,7 @@ function reset(){
 
 }
 
-function estorn(){
+function estorn(e){
   if(document.getElementById('mussarela').checked){
     somMussa = somMussa - 1;
     vendaMussa = vendaMussa - 18.99;
@@ -158,12 +157,31 @@ function estorn(){
     document.getElementById('resultadoBacon').innerHTML = somaBacon;
     document.getElementById('vendabacon').innerHTML = vendabacon.toFixed(2);
   
+  }else if(document.getElementById('portuguesa').checked){
+    somaPortu = somaPortu -1;
+    vendaPortu = vendaPortu - 32.00;
+    document.getElementById('resultadoPortu').innerHTML = somaPortu;
+    document.getElementById('vendaPortu').innerHTML = vendaPortu.toFixed(2);
+    
   
   
-  }
-
-
-
-
-
+  }else if(document.getElementById('vegetariana').checked){
+    somaVege = somaVege - 1;
+    vendaVege = vendaVege - 42.00;
+    document.getElementById('resultadoVege').innerHTML = somaVege;
+    document.getElementById('vendaVege').innerHTML = vendaVege.toFixed(2);
+  
+  
+  
+  }else if(document.getElementById('francatu').checked){
+    somaFrang = somaFrang - 1;
+    vendaFran = vendaFran - 32.00;
+    document.getElementById('resultadoFran').innerHTML = somaFrang;
+    document.getElementById('vendaFran').innerHTML = vendaFran.toFixed(2);
+  
+  };
 }
+
+function panilha(){
+  TableToExcel.convert(document.getElementById('table'));
+};

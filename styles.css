@@ -1,6 +1,7 @@
 body{
   margin: auto;
   width: 60%;
+  background-image: linear-gradient(rgb(201, 224, 201), rgba(0, 255, 0, 0.548));
 }
 
 header{
@@ -12,23 +13,28 @@ header{
 
 h1{
 
+border-radius: 50%;
   display: flex;
   justify-content: center;
   margin-bottom:  14px;
   padding: 22px;
+  background-color: rgba(37, 36, 37, 0.116);
   
 }
 
 header ul li {
 
   list-style: none;
+ 
 
 }
 section form ul li{
   list-style: none;
+  font-family:Arial, Helvetica, sans-serif ;
+ 
 }
 section form ul li label{
-  font-size: 22px;
+  font-size: 15px;
 }
 section{
 
@@ -38,11 +44,14 @@ section{
   font-size: medium;
 }
 section button{
-  margin: 5px;
-  font-size: 20px;
+  margin: 11px;
+  margin-top: 2px;
+  
 }
 
 table, th, td{
+  
+  margin-block-end: 32px;
   border: 2px solid black;
   border-collapse: collapse;
   border-radius: 5px;
@@ -50,3 +59,29 @@ table, th, td{
 
 
 }
+.myButton {
+	box-shadow: 0px 7px 14px -7px #468f32;
+	background:linear-gradient(to bottom, #44c767 5%, #3e5432 100%);
+	background-color:#44c767;
+	border-radius:17px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:11px;
+	font-weight:bold;
+	font-style:italic;
+	padding:8px 12px;
+	text-decoration:none;
+	text-shadow:0px -2px 0px #2f6627;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #3e5432 5%, #44c767 100%);
+	background-color:#3e5432;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+        
